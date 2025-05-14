@@ -18,39 +18,39 @@ const galeria = [
 
 const productos = [
     {
-      title: "AstroFiction",
-      author: "John Doe",
-      price: 49.9,
+      title: "Hamburguesa con cebolla",
+      author: "Carne de Res y cebolla",
+      price: 201.9,
       image: "./assets/products/img6.png"
     },
     {
-      title: "Space Odissey",
-      author: "Marie Anne",
-      price: 35,
+      title: "Costra de queso",
+      author: "Carne de Res y verdura",
+      price: 187,
       image: "./assets/products/img1.png"
     },
     {
-      title: "Doomed City",
-      author: "Jason Cobert",
+      title: "Hamburguesa Sencilla",
+      author: "Carne de res y verdura",
       price: 0,
       image: "./assets/products/img2.png"
     },
     {
-      title: "Black Dog",
-      author: "John Doe",
-      price: 85.35,
+      title: "Hamburguesa Doble",
+      author: "Dos carnes de res",
+      price: 349.24,
       image: "./assets/products/img3.png"
     },
     {
-      title: "My Little Robot",
-      author: "Pedro Paulo",
+      title: "Hamburguesa Vegana",
+      author: "Carne vegana",
       price: 0,
       image: "./assets/products/img5.png"
     },
     {
-      title: "Garden Girl",
-      author: "Ankit Patel",
-      price: 45,
+      title: "Kids Meal",
+      author: "Mini hamburguesa",
+      price: 70,
       image: "./assets/products/img4.png"
     }
 ];
@@ -74,13 +74,13 @@ function saludoHandler(){
 
     let saludo;
     if(hora<12){
-        saludo = "Dias";
+        saludo = "Buenos Dias";
     }else if(hora <19){
-        saludo = "tardes";
+        saludo = "Buenas Tardes";
     }else if(hora <24){
-        saludo = "noches";
+        saludo = "Buenas Noches";
     }else{
-        saludo = "hola";
+        saludo = "Bienvenido";
     } 
 
     document.querySelector("#greeting").innerHTML = saludo;
@@ -259,7 +259,7 @@ function productoHandler() {
 
 function footerHandler() {
     let añoActual = new Date().getFullYear();
-    document.querySelector("footer").textContent = `© ${añoActual} - All rights reserved`;
+    document.querySelector("footer").textContent = `© ${añoActual} - BIGMACSCOTT All rights reserved`;
 }
 
 //Carga de la pagina
